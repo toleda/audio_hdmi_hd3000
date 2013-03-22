@@ -1,9 +1,6 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_hd4000
-<<<<<<< HEAD
 # File: ib1-ami_efi_clean_compile_v1.1
-=======
 # File: ami_efi_clean_compile_v1.1
->>>>>>> Initial Commit
 # Credits: http://olarila.com/forum/patches.php, PJALM http://repo.pjalm.info/general
 #
 # Complier fixes for newly extracted AMI/UEFI/dsdts
