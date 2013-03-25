@@ -1,4 +1,4 @@
-audio_hdmi_hd3000
+Use audio_hdmi_hd3000
 ============
 OS X AMD/Nvidia/HD3000 HDMI Audio dsdt edits
 

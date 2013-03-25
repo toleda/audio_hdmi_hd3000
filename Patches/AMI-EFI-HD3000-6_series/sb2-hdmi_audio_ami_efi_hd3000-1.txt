@@ -170,5 +170,5 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("ssb2-hdmi_audio_ami_efi_hd3000-1.txt_v1.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("sb2-hdmi_audio_ami_efi_hd3000-1.txt_v1.0 dsdt edits, github.com/toleda", Debug) end
 
