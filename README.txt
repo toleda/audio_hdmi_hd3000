@@ -56,6 +56,6 @@ github.com/toleda/audio_hdmi_hd4000
 github.com/toleda/audio_hdmi_5series
 
 toleda
-https://github.com/toleda/audio_hdmi
+https://github.com/toleda/audio_hdmi_hd3000
 Patches
 README.txt
