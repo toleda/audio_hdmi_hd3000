@@ -47,13 +47,10 @@ Guides:
          edits
     SB5. HD3000-on-7_Series_MB - HD3000 MEI dsdt edit
 1c. Troubleshooting/AMI/Post to http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
-1d. Troubleshooting/Award/Post to http://www.tonymacx86.com/hdmi-audio/70758-mountain-lion-hdmi-audio-award-dsdt.html
 
-2. Ivy Bridge/HD4000/3rd Generation Core Processors/7 Series motherboards/AMI EFI
-github.com/toleda/audio_hdmi_hd4000
-
-3. Nehalem/1st Generation Core Processors/5 Series motherboards (No HD Graphics)
-github.com/toleda/audio_hdmi_5series
+Troubleshooting/Post
+1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
+2. http://www.insanelymac.com/forum/topic/291103-mountain-lion-hdmi-audio/
 
 toleda
 https://github.com/toleda/audio_hdmi_hd3000
