@@ -46,7 +46,6 @@ Guides:
     SB4. Award-BIOS-HD3000-AMD-Nvidia-6_Series-A1 - AMD/Nvidia/HD3000 HDMI audio dsdt
          edits
     SB5. HD3000-on-7_Series_MB - HD3000 MEI dsdt edit
-1c. Troubleshooting/AMI/Post to http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
 
 Troubleshooting/Post
 1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
