@@ -18,6 +18,10 @@ http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.htm
 3. Mountain Lion HDMI Audio - Award DSDT
 http://www.tonymacx86.com/hdmi-audio/70758-mountain-lion-hdmi-audio-award-dsdt.html
 
+Two ML HD3000 HDMI audio enabling techniques - select one
+1. ML: HD3000 HDMI Audio dsdt (with dsdt edits) 
+2. ML: HD3000 HDMI Audio ssdt (with native dsdt)
+
 ML HD3000 HDMI Audio dsdt edits
 1. MaciASL - http://sourceforge.net/projects/maciasl/?source=navbar
 2. Configuration: MaciASL/Preferences/Sources/+/  (copy/paste URL, don't click)
@@ -36,6 +40,18 @@ Usage
 Installation - edited dsdt.aml to Extra
 1. MaciASL/File/Save As…/ACPI Machine Language Binary/Extra/dsdt.aml (add extension)
 
+ML: HD3000 HDMI Audio ssdt
+1. https://github.com/toleda/audio_hdmi_hd3000/tree/master/ssdt_6series
+2. Copy Downloads/audio_ssdt-hdmi.. . ./SSDT-1.aml to Extra
+2a. If Extra/SSDT.aml is present, install SSDT-1.aml as is: Extra/SSDT-1.aml
+2b. If no Extra/SSDT.aml, rename SSDT-1.aml to SSDT.aml and install as: Extra/SSDT.aml
+2c. The 1st SSDT is SSDT, 2nd is SSDT-1, 3rd is SSDT-2, etc.; no gaps
+3. Enable ssdt
+3a. Chameleon/Chimera: Add DropSSDT=Yes to org,chameleon.Boot.plist
+3b. Clover: Set DropOem=true to config.plist/ACPI/SSDT
+4. Rebuild kernel cache
+5. Restart
+
 Guides:
 1. Sandy Bridge/HD3000/2rd Generation Core Processors/6 Series motherboards
 1a. [Guide] ML-Sandy_Bridge-HD3000-6_series-hdmi_audio_dsdt_edits (AMI/Award dsdt)
@@ -46,6 +62,9 @@ Guides:
     SB4. Award-BIOS-HD3000-AMD-Nvidia-6_Series-A1 - AMD/Nvidia/HD3000 HDMI audio dsdt
          edits
     SB5. HD3000-on-7_Series_MB - HD3000 MEI dsdt edit
+1c. ssdts
+    audio_ssdt-hdmi-ami_hd3k-amd-nvidia-3_v2.zip
+    audio_ssdt-hdmi-award_hd3k-amd-nvidia-3_v1.zip
 
 Troubleshooting/Post
 1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
