@@ -2,13 +2,17 @@ Use audio_hdmi_hd3000
 ============
 OS X AMD/Nvidia/HD3000 HDMI Audio dsdt edits
 
-This guide enables OS X HDMI audio on Intel based motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx and HD6xxx), Nvidia discrete graphics cards (4xx, 5xx and 6xx) and Intel HD3000 integrated graphics systems.  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892 and ALC898) for onboard audio.  The native ML AppleHDA.kext supports only HDMI audio when configured properly. In Mountain Lion, the Optimized AppleHDA.kext supports 2 Audio_IDs for HDMI and Realtek onboard audio:
+This guide enables OS X HDMI audio on Intel based motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx, HD6xxx and HD7xxx), Nvidia discrete graphics cards (4xx, 5xx, 6xx and 7xx) and Intel HD3000 integrated graphics systems.  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892, ALC898) for onboard audio.  The native ML AppleHDA.kext supports only HDMI audio when configured properly. In Mountain Lion, the Optimized AppleHDA.kext supports 2 Audio_IDs for HDMI and Realtek onboard audio:
 Audio_ID: 1 supports AMD/Nvidia HDMI and 3, 5 and 6 port ALC8xx onboard audio  
 Audio_ID: 3 supports HD3000/HD4000 HDMI and 3, 5 and 6 port ALC8xx onboard audio
 
 Note
 1. Native ML AppleHDA.kext, use Audio_ID: 1, for HDMI audio/no onboard audio
 2. Integrated and Discrete HDMI audio, use Audio_ID:3, for HDMI audio and Realtek on board audio
+
+OS X versions supported
+1. Mavericks.10.9 and newer
+2. Mountain Lion/10.8.2 and newer
 
 More Information
 1. Mountain Lion: Optimized AppleHDA for Realtek ALC8xx
@@ -53,8 +57,8 @@ ML: HD3000 HDMI Audio ssdt
 5. Restart
 
 Guides:
-1. Sandy Bridge/HD3000/2rd Generation Core Processors/6 Series motherboards
-1a. [Guide] ML-Sandy_Bridge-HD3000-6_series-hdmi_audio_dsdt_edits (AMI/Award dsdt)
+1. HD3000/Sandy Bridge/2rd Generation Core Processors/6 Series motherboards
+1a. [Guide]- HD3000-hdmi_audio_dsdt_edits_v1.1.pdf.zip
 1b. Patches (Note: for A3, Find: 0x01, 0x00, 0x00, 0x00/Replace: 0x03, 0x00, 0x00, 0x00)
     IB1. AMI-EFI-Clean Compile - fix native dsdt compiler errors for successful dsdt edits
     SB2. AMI-EFI-HD3000-AMD-Nvidia-6_Series-A1 - AMD/Nvidia/HD3000 HDMI audio dsdt edits
