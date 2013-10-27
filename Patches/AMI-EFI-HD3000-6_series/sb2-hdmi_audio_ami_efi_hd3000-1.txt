@@ -1,6 +1,6 @@
 <<<<<<< HEAD:Patches/AMI-HD4000-7_Series/ib2-hdmi_audio_ami_efi_hd4000-1.txt
 # Maintained by: toleda for: github.com/toleda/audio_hdmi_hd4000
-# File: ib2-hdmi_audio_ami_efi_hd4000-1.txt_v1.0
+# File: ib2-hdmi_audio_ami_efi_hd4000-1.txt_v1.1
 # Adds Desktop AMD/Nvidia/HD4000 HDMI audio dsdt edits  (Audio ID: 1)
 =======
 # Maintained by: toleda for: github.com/toleda_hdmi_hd3000
@@ -180,5 +180,5 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("sb2-hdmi_audio_ami_efi_hd3000-1.txt_v1.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("sb2-hdmi_audio_ami_efi_hd3000-1.txt_v1.1 dsdt edits, github.com/toleda", Debug) end
 
