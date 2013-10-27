@@ -30,7 +30,7 @@ into scope label _SB.PCI0.PEG0.GFX0 set_label begin _SB.PCI0.PEGP.IGPU end;
 into device label PEG0 set_label begin PEGP end;
 into_all all code_regex PEG0 replaceall_matched begin PEGP end;
 into scope label _SB.PCI0.PEG0 set_label begin _SB.PCI0.PEGP end;
-into scope label \_SB.PCI0.PEGo set_label begin \_SB.PCI0.PEGP end;
+into scope label \_SB.PCI0.PEG0 set_label begin \_SB.PCI0.PEGP end;
 # 4. Add method DTGP to the main block, it's used by other patches
 into method label DTGP remove_entry;
 into definitionblock code_regex . insert
