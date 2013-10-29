@@ -1,5 +1,5 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_hd3000
-# File: sb4-hdmi_audio_award_hd3000-1_v1.0
+# File: sb4-hdmi_audio_award_hd3000-3_v1.1
 # hdmi_audio_sandy_bridge_gigabyte_motherboards from tonymacx86 dsdt database
 # Adds Desktop AMD/Nvidia/HD3000 HDMI audio dsdt edits  (Audio ID: 1)
 #
@@ -158,7 +158,7 @@ begin
                 "layout-id", \n
                 Buffer (0x04)\n
                 {\n
-                    0x01, 0x00, 0x00, 0x00\n
+                    0x03, 0x00, 0x00, 0x00\n
                 }, \n
                 "PinConfigurations", \n
                 Buffer (Zero) {}\n
@@ -168,5 +168,5 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("File: sb4-hdmi_audio_award_hd3000-1_v1.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("File: sb4-hdmi_audio_award_hd3000-3_v1.1 dsdt edits, github.com/toleda", Debug) end
 

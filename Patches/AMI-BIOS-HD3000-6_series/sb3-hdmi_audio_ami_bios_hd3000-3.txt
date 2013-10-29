@@ -1,5 +1,5 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_hd3000
-# File: sb3-hdmi_audio_ami_bios_hd3000-1.txt_v1.0
+# File: sb3-hdmi_audio_ami_bios_hd3000-3.txt_v1.1
 # Adds Desktop AMD/Nvidia/HD3000 HDMI audio dsdt edits  (Audio ID: 1)
 #
 # 1. Remove PEGP device - if present
@@ -171,7 +171,7 @@ Device (HDEF) \n
                 "layout-id", \n
                 Buffer (0x04)\n
                 {\n
-                    0x01, 0x00, 0x00, 0x00\n
+                    0x03, 0x00, 0x00, 0x00\n
                 }, \n
                 "PinConfigurations", \n
                 Buffer (Zero) {}\n
@@ -182,4 +182,4 @@ Device (HDEF) \n
 }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("sb3-hdmi_audio_ami_bios_hd3000-1.txt_v1.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("sb3-hdmi_audio_ami_bios_hd3000-3.txt_v1.1 dsdt edits, github.com/toleda", Debug) end
