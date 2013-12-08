@@ -2,31 +2,27 @@ Use audio_hdmi_hd3000
 ============
 OS X AMD/Nvidia/HD3000 HDMI Audio dsdt edits
 
-This guide enables OS X HDMI audio on Intel based motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx, HD6xxx and HD7xxx), Nvidia discrete graphics cards (4xx, 5xx, 6xx and 7xx) and Intel HD3000 integrated graphics systems.  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892, ALC898) for onboard audio.  The native ML AppleHDA.kext supports only HDMI audio when configured properly. In Mountain Lion, the Optimized AppleHDA.kext supports 2 Audio_IDs for HDMI and Realtek onboard audio:
+This guide enables OS X HDMI audio on Intel based motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx, HD6xxx and HD7xxx), Nvidia discrete graphics cards (4xx, 5xx, 6xx and 7xx) and Intel HD3000 integrated graphics systems.  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892, ALC898) for onboard audio.  The native AppleHDA.kext supports only HDMI audio when configured properly. In OS X, the Optimized AppleHDA.kext supports 2 Audio_IDs for HDMI and Realtek onboard audio:
 Audio_ID: 1 supports AMD/Nvidia HDMI and 3, 5 and 6 port ALC8xx onboard audio  
 Audio_ID: 3 supports HD3000/HD4000 HDMI and 3, 5 and 6 port ALC8xx onboard audio
 
 Note
-1. Native ML AppleHDA.kext, use Audio_ID: 1, for HDMI audio/no onboard audio
+1. Native AppleHDA.kext, use Audio_ID: 1, for HDMI audio/no onboard audio
 2. Integrated and Discrete HDMI audio, use Audio_ID:3, for HDMI audio and Realtek on board audio
 
 OS X versions supported
 1. Mavericks.10.9 and newer
 2. Mountain Lion/10.8.2 and newer
 
-More Information
-1. Mountain Lion: Optimized AppleHDA for Realtek ALC8xx
-http://www.tonymacx86.com/audio/76202-mountain-lion-optimized-applehda-realtek-alc8xx.html#post472375
-2. Mountain Lion HDMI Audio - AMI DSDT
-http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
-3. Mountain Lion HDMI Audio - Award DSDT
-http://www.tonymacx86.com/hdmi-audio/70758-mountain-lion-hdmi-audio-award-dsdt.html
+Location.aml - dsdt.aml/ssdt.aml installation folder
+1. Chameleon/Chimera - Extra/
+2. Clover - EFI/Clover/ACPI/Patched/
 
-Two ML HD3000 HDMI audio enabling techniques - select one
-1. ML: HD3000 HDMI Audio dsdt (with dsdt edits) 
-2. ML: HD3000 HDMI Audio ssdt (with native dsdt)
+Two HD3000 HDMI audio enabling techniques - select one
+1. DSDT - HD3000 HDMI Audio (with dsdt edits) 
+2. SSDT - HD3000 HDMI Audio (with native dsdt)
 
-ML HD3000 HDMI Audio dsdt edits
+DSDT - HD3000 HDMI Audio
 1. MaciASL - http://sourceforge.net/projects/maciasl/?source=navbar
 2. Configuration: MaciASL/Preferences/Sources/+/  (copy/paste URL, don't click)
 3. URL: https://raw.github.com/toleda/audio_hdmi_hd3000/master
@@ -42,17 +38,17 @@ Usage
 7. MaciASL/File/Save As…/ACPI Machine Language Binary/dsdt.aml
 
 Installation - edited dsdt.aml to Extra
-1. MaciASL/File/Save As…/ACPI Machine Language Binary/Extra/dsdt.aml (add extension)
+1. MaciASL/File/Save As…/ACPI Machine Language Binary/Location.aml/dsdt.aml (add extension)
 
-ML: HD3000 HDMI Audio ssdt
+SSDT - HD3000 HDMI Audio
 1. https://github.com/toleda/audio_hdmi_hd3000/tree/master/ssdt_6series
-2. Copy Downloads/audio_ssdt-hdmi.. . ./SSDT-1.aml to Extra
-2a. If Extra/SSDT.aml is present, install SSDT-1.aml as is: Extra/SSDT-1.aml
-2b. If no Extra/SSDT.aml, rename SSDT-1.aml to SSDT.aml and install as: Extra/SSDT.aml
+2. Copy Downloads/audio_ssdt-hdmi.. . ./SSDT-1.aml to Location.aml
+2a. If Location.aml/SSDT.aml is present, install SSDT-1.aml as is: Location.aml/SSDT-1.aml
+2b. If no Location.aml/SSDT.aml, rename SSDT-1.aml to SSDT.aml and install as: Location.aml/SSDT.aml
 2c. The 1st SSDT is SSDT, 2nd is SSDT-1, 3rd is SSDT-2, etc.; no gaps
 3. Enable ssdt
 3a. Chameleon/Chimera: Add DropSSDT=Yes to org,chameleon.Boot.plist
-3b. Clover: Set DropOem=true to config.plist/ACPI/SSDT
+3b. Clover: Set DropOem=YES to config.plist/ACPI/SSDT
 4. Rebuild kernel cache
 5. Restart
 
@@ -83,6 +79,7 @@ Guides:
 1c. ssdts
     audio_ssdt-hdmi-ami_hd3k-amd-nvidia-3_v2.zip
     audio_ssdt-hdmi-award_hd3k-amd-nvidia-3_v1.zip
+    audio_ssdt-hdmi-uefi_hd3k-amd-nvidia-3_v1.zip
 
 toleda
 https://github.com/toleda/audio_hdmi_hd3000
