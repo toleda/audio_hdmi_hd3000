@@ -1,5 +1,5 @@
-AMI-EFI/Clean Compile	DSDT	Patches/ib1-ami_efi_clean_compile.txt
-AMI-EFI-HD3000-6_series	DSDT	Patches/AMI-EFI-HD3000-6_series/sb2-hdmi_audio_ami_efi_hd3000-3.txt
-AMI-BIOS-HD3000-6_series	DSDT	Patches/AMI-BIOS-HD3000-6_series/sb3-hdmi_audio_ami_bios_hd3000-3.txt
-AMI-HD3000-7_series-MEI	DSDT	Patches/AMI-HD3000-7_series-MEI/sb5-mei_hd3000-7_series-fix.txt
-Award-BIOS-HD3000-6_series	DSDT	Patches/Award-BIOS-HD3000-6_series/sb4-hdmi_audio_award_hd3000-3.txt
+AMI-UEFI-Clean_Compile-6series	DSDT	Patches/ib1-ami_efi_clean_compile.txt
+AMI-UEFI-HD3000-AMD-Nvidia-A3	DSDT	Patches/AMI-EFI-HD3000-6_series/sb2-hdmi_audio_ami_efi_hd3000-3.txt
+AMI-BIOS-HD3000-AMD-Nvidia-A3	DSDT	Patches/AMI-BIOS-HD3000-6_series/sb3-hdmi_audio_ami_bios_hd3000-3.txt
+AMI-HD3000-7series-MEI_Fix	DSDT	Patches/AMI-HD3000-7_series-MEI/sb5-mei_hd3000-7_series-fix.txt
+Award-BIOS-HD3000-AMD-Nvidia-A3	DSDT	Patches/Award-BIOS-HD3000-6_series/sb4-hdmi_audio_award_hd3000-3.txt
