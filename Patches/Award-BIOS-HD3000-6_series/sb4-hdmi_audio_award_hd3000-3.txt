@@ -1,5 +1,5 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_hd3000
-# File: sb4-hdmi_audio_award_hd3000-3_v2.0
+# File: sb4-hdmi_audio_award_hd3000-3_v3.0
 # Credit: PikeRAlpha, PJALM, RehabMan, SL_UnderWater
 #
 # Requires: Gigabyte/Socket 1156 dsdt from tonymacx86 dsdt database
@@ -47,6 +47,8 @@ Device (GFX0)\n
                 "@1,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@2,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@3,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@4,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@5,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "hda-gfx", Buffer() { "onboard-2" },\n
 	    })\n
     }\n
@@ -95,5 +97,5 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("File: sb4-hdmi_audio_award_hd3000-3_v2.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("File: sb4-hdmi_audio_award_hd3000-3_v3.0 dsdt edits, github.com/toleda", Debug) end
 
